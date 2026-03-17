@@ -1,0 +1,123 @@
+:root{
+    --primary-color: #ffffff;
+    --font-main: 'Arial', sans-serif;
+    --secundary-color: #ddebff;
+    --margin-cards-sides: 30px;
+    --margin-cards-up-down: 10px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+}
+
+body{
+    background: linear-gradient(to bottom, var(--primary-color), var(--secundary-color));
+    min-height: 100vh;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-light);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 20px;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.navbar li {
+    position: relative;
+}
+.navbar a {
+    display: block;
+    transition: color 0.3s;
+    text-decoration: none;
+    padding: 10px 15px;      
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-main);
+}
+.navbar a:hover {
+    color: #0e5cda;
+    font-weight: bold;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--text-main);
+}
+
+.logo span {
+  color: var(--accent); 
+}
+
+article {
+    background-color: var(--secundary-color);
+    box-shadow: inset 0 5px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: var(--margin-cards-sides);
+}
+article div {
+    margin: var(--margin-cards-sides);
+    padding-bottom: var(--margin-cards-up-down);
+    padding-top: var(--margin-cards-up-down);
+}
+h2 {
+    color: #335f66;
+    font-family: var(--font-main);
+}
+p {
+    font-family: var(--font-main);
+    color: black;
+}
+.aside {
+    background-color: var(--secundary-color);
+    box-shadow: inset 0 5px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: var(--margin-cards-up-down);
+    margin: var(--margin-cards-sides);
+}
+.aside h3 {
+    color: #3b3a3a;
+    font-family: var(--font-main);
+    margin-left: 20px;
+}
+.aside ul {
+    list-style-type: circle;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+.aside a {
+    font-family: var(--font-main);
+    color: black;
+    text-decoration:none;
+}
+.aside a:hover {
+    font-weight: bold;
+    color: green;
+}
